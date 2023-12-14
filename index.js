@@ -20,6 +20,7 @@ function start_chrono(){
   
 }
 
+
 function update_chrono(){
   is_start = true
   seconde_initiale++
@@ -30,12 +31,11 @@ function update_chrono(){
     seconde_initiale = 0
    minutes_initiale = 0
     hours_initiale++
-   
   }
+ 
   heures = (hours_initiale < 10 ? `0${hours_initiale}` : hours_initiale )
   minutes = (minutes_initiale < 10 ? `0${minutes_initiale}` : minutes_initiale)
   seconde = (seconde_initiale < 10 ? `0${seconde_initiale}` : seconde_initiale)
-
   display.textContent = `${heures} : ${minutes} : ${seconde}`
 }
 
@@ -46,7 +46,6 @@ function reset_chrono(){
    seconde_initiale = 0;
  minutes_initiale = 0 ;
  hours_initiale = 0 ;
-
  display.textContent = `00 :00 : 00`
 }
  
